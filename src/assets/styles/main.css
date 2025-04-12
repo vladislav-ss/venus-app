@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+@import '../fonts/dm-sans/webfont.css';
+@import './common/_commons.css';
+@import './components/_components.css';
+@tailwind utilities;
+
+@layer base {
+  :root,
+  :host {
+    --font-sans: 'DM Sans', sans-serif;
+    --background: #e9edf7;
+    --text-color: #1b2559;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--text-color);
+  }
+}

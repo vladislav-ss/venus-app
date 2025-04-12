@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "username": "charles_robbie",
+    "firstName": "Charles",
+    "lastName": "Robbie",
+    "email": "charles.robbie@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/men/1.jpg",
+    "location": "New York, USA"
+  },
+  {
+    "id": 2,
+    "username": "emily_stone",
+    "firstName": "Emily",
+    "lastName": "Stone",
+    "email": "emily.stone@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/women/2.jpg",
+    "location": "London, UK"
+  },
+  {
+    "id": 3,
+    "username": "david_lee",
+    "firstName": "David",
+    "lastName": "Lee",
+    "email": "david.lee@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/men/3.jpg",
+    "location": "Tokyo, Japan"
+  },
+  {
+    "id": 4,
+    "username": "sophie_dupont",
+    "firstName": "Sophie",
+    "lastName": "Dupont",
+    "email": "sophie.dupont@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/women/4.jpg",
+    "location": "Paris, France"
+  },
+  {
+    "id": 5,
+    "username": "marco_rossi",
+    "firstName": "Marco",
+    "lastName": "Rossi",
+    "email": "marco.rossi@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/men/5.jpg",
+    "location": "Rome, Italy"
+  },
+  {
+    "id": 6,
+    "username": "anna_schmidt",
+    "firstName": "Anna",
+    "lastName": "Schmidt",
+    "email": "anna.schmidt@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/women/6.jpg",
+    "location": "Berlin, Germany"
+  },
+  {
+    "id": 7,
+    "username": "pablo_garcia",
+    "firstName": "Pablo",
+    "lastName": "Garcia",
+    "email": "pablo.garcia@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/men/7.jpg",
+    "location": "Madrid, Spain"
+  },
+  {
+    "id": 8,
+    "username": "lisa_andersson",
+    "firstName": "Lisa",
+    "lastName": "Andersson",
+    "email": "lisa.andersson@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/women/8.jpg",
+    "location": "Stockholm, Sweden"
+  },
+  {
+    "id": 9,
+    "username": "jan_kowalski",
+    "firstName": "Jan",
+    "lastName": "Kowalski",
+    "email": "jan.kowalski@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/men/9.jpg",
+    "location": "Warsaw, Poland"
+  },
+  {
+    "id": 10,
+    "username": "maria_silva",
+    "firstName": "Maria",
+    "lastName": "Silva",
+    "email": "maria.silva@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/women/10.jpg",
+    "location": "Lisbon, Portugal"
+  },
+  {
+    "id": 11,
+    "username": "lukas_muller",
+    "firstName": "Lukas",
+    "lastName": "Müller",
+    "email": "lukas.muller@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/men/11.jpg",
+    "location": "Vienna, Austria"
+  },
+  {
+    "id": 12,
+    "username": "sofia_petrov",
+    "firstName": "Sofia",
+    "lastName": "Petrov",
+    "email": "sofia.petrov@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/women/12.jpg",
+    "location": "Moscow, Russia"
+  },
+  {
+    "id": 13,
+    "username": "thomas_andersen",
+    "firstName": "Thomas",
+    "lastName": "Andersen",
+    "email": "thomas.andersen@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/men/13.jpg",
+    "location": "Copenhagen, Denmark"
+  },
+  {
+    "id": 14,
+    "username": "eva_novak",
+    "firstName": "Eva",
+    "lastName": "Novak",
+    "email": "eva.novak@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/women/14.jpg",
+    "location": "Prague, Czech Republic"
+  },
+  {
+    "id": 15,
+    "username": "michael_weber",
+    "firstName": "Michael",
+    "lastName": "Weber",
+    "email": "michael.weber@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/men/15.jpg",
+    "location": "Munich, Germany"
+  },
+  {
+    "id": 16,
+    "username": "claire_martin",
+    "firstName": "Claire",
+    "lastName": "Martin",
+    "email": "claire.martin@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/women/16.jpg",
+    "location": "Brussels, Belgium"
+  },
+  {
+    "id": 17,
+    "username": "alexander_ivanov",
+    "firstName": "Alexander",
+    "lastName": "Ivanov",
+    "email": "alexander.ivanov@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/men/17.jpg",
+    "location": "Saint Petersburg, Russia"
+  },
+  {
+    "id": 18,
+    "username": "isabella_fernandez",
+    "firstName": "Isabella",
+    "lastName": "Fernandez",
+    "email": "isabella.fernandez@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/women/18.jpg",
+    "location": "Barcelona, Spain"
+  },
+  {
+    "id": 19,
+    "username": "oliver_smith",
+    "firstName": "Oliver",
+    "lastName": "Smith",
+    "email": "oliver.smith@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/men/19.jpg",
+    "location": "Manchester, UK"
+  },
+  {
+    "id": 20,
+    "username": "emma_jones",
+    "firstName": "Emma",
+    "lastName": "Jones",
+    "email": "emma.jones@example.com",
+    "profilePicture": "https://randomuser.me/api/portraits/women/20.jpg",
+    "location": "Dublin, Ireland"
+  }
+]

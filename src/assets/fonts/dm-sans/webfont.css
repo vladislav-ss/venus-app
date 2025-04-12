@@ -1,0 +1,18 @@
+
+/* DM Sans Normal */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('./DMSans-VariableFont_opsz,wght.ttf') format('truetype-variations');
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* DM Sans Italic */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('./DMSans-Italic-VariableFont_opsz,wght.ttf') format('truetype-variations');
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: swap;
+}

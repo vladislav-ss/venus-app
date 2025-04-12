@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "name": "Alice Johnson",
+    "dateJoined": "2025-04-03"
+  },
+  {
+    "id": 2,
+    "userId": 1,
+    "name": "Bob Williams",
+    "dateJoined": "2025-04-03"
+  },
+  {
+    "id": 3,
+    "userId": 1,
+    "name": "Carol Davis",
+    "dateJoined": "2025-04-03"
+  },
+  {
+    "id": 4,
+    "userId": 1,
+    "name": "David Miller",
+    "dateJoined": "2025-04-03"
+  },
+  {
+    "id": 5,
+    "userId": 2,
+    "name": "Sarah Brown",
+    "dateJoined": "2025-04-03"
+  },
+  {
+    "id": 6,
+    "userId": 3,
+    "name": "Michael Green",
+    "dateJoined": "2025-04-03"
+  },
+  {
+    "id": 7,
+    "userId": 1,
+    "name": "Emma Wilson",
+    "dateJoined": "2025-04-05"
+  },
+  {
+    "id": 8,
+    "userId": 1,
+    "name": "James Taylor",
+    "dateJoined": "2025-04-06"
+  },
+  {
+    "id": 9,
+    "userId": 2,
+    "name": "Sophie Martin",
+    "dateJoined": "2025-04-07"
+  },
+  {
+    "id": 10,
+    "userId": 2,
+    "name": "Lucas Dubois",
+    "dateJoined": "2025-04-08"
+  },
+  {
+    "id": 11,
+    "userId": 3,
+    "name": "Maria Garcia",
+    "dateJoined": "2025-04-09"
+  },
+  {
+    "id": 12,
+    "userId": 3,
+    "name": "Thomas Schmidt",
+    "dateJoined": "2025-04-10"
+  },
+  {
+    "id": 13,
+    "userId": 4,
+    "name": "Anna Kowalski",
+    "dateJoined": "2025-04-11"
+  },
+  {
+    "id": 14,
+    "userId": 4,
+    "name": "Piotr Nowak",
+    "dateJoined": "2025-04-12"
+  },
+  {
+    "id": 15,
+    "userId": 5,
+    "name": "Giulia Rossi",
+    "dateJoined": "2025-04-13"
+  },
+  {
+    "id": 16,
+    "userId": 5,
+    "name": "Marco Bianchi",
+    "dateJoined": "2025-04-14"
+  },
+  {
+    "id": 17,
+    "userId": 6,
+    "name": "Elena Müller",
+    "dateJoined": "2025-04-15"
+  },
+  {
+    "id": 18,
+    "userId": 6,
+    "name": "Klaus Weber",
+    "dateJoined": "2025-04-16"
+  },
+  {
+    "id": 19,
+    "userId": 7,
+    "name": "Isabella Fernandez",
+    "dateJoined": "2025-04-17"
+  },
+  {
+    "id": 20,
+    "userId": 7,
+    "name": "Carlos Rodriguez",
+    "dateJoined": "2025-04-18"
+  },
+  {
+    "id": 21,
+    "userId": 8,
+    "name": "Sofia Andersson",
+    "dateJoined": "2025-04-19"
+  },
+  {
+    "id": 22,
+    "userId": 8,
+    "name": "Erik Johansson",
+    "dateJoined": "2025-04-20"
+  },
+  {
+    "id": 23,
+    "userId": 9,
+    "name": "Katarzyna Nowak",
+    "dateJoined": "2025-04-21"
+  },
+  {
+    "id": 24,
+    "userId": 9,
+    "name": "Marek Kowalski",
+    "dateJoined": "2025-04-22"
+  },
+  {
+    "id": 25,
+    "userId": 10,
+    "name": "Ana Silva",
+    "dateJoined": "2025-04-23"
+  },
+  {
+    "id": 26,
+    "userId": 10,
+    "name": "João Santos",
+    "dateJoined": "2025-04-24"
+  },
+  {
+    "id": 27,
+    "userId": 11,
+    "name": "Lena Müller",
+    "dateJoined": "2025-04-25"
+  },
+  {
+    "id": 28,
+    "userId": 11,
+    "name": "Max Schmidt",
+    "dateJoined": "2025-04-26"
+  },
+  {
+    "id": 29,
+    "userId": 12,
+    "name": "Natalia Ivanova",
+    "dateJoined": "2025-04-27"
+  },
+  {
+    "id": 30,
+    "userId": 12,
+    "name": "Dmitri Petrov",
+    "dateJoined": "2025-04-28"
+  },
+  {
+    "id": 31,
+    "userId": 13,
+    "name": "Emma Nielsen",
+    "dateJoined": "2025-04-29"
+  },
+  {
+    "id": 32,
+    "userId": 13,
+    "name": "Lars Hansen",
+    "dateJoined": "2025-04-30"
+  },
+  {
+    "id": 33,
+    "userId": 14,
+    "name": "Tereza Novak",
+    "dateJoined": "2025-05-01"
+  },
+  {
+    "id": 34,
+    "userId": 14,
+    "name": "Jan Svoboda",
+    "dateJoined": "2025-05-02"
+  },
+  {
+    "id": 35,
+    "userId": 15,
+    "name": "Laura Weber",
+    "dateJoined": "2025-05-03"
+  },
+  {
+    "id": 36,
+    "userId": 15,
+    "name": "Felix Schmidt",
+    "dateJoined": "2025-05-04"
+  },
+  {
+    "id": 37,
+    "userId": 16,
+    "name": "Marie Dubois",
+    "dateJoined": "2025-05-05"
+  },
+  {
+    "id": 38,
+    "userId": 16,
+    "name": "Pierre Martin",
+    "dateJoined": "2025-05-06"
+  },
+  {
+    "id": 39,
+    "userId": 17,
+    "name": "Olga Ivanova",
+    "dateJoined": "2025-05-07"
+  },
+  {
+    "id": 40,
+    "userId": 17,
+    "name": "Sergei Petrov",
+    "dateJoined": "2025-05-08"
+  }
+]
