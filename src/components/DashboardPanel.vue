@@ -39,7 +39,7 @@
 </template>
 
 <script setup lang="ts">
-import GreetingCard from './dashboard/GreetingCard.vue';
+import GreetingCard from './GreetingCard.vue';
 import SearchBar from './SearchBar.vue';
 import QuickSpentCard from './dashboard/QuickSpentCard.vue';
 import NewClientsCard from './dashboard/NewClientsCard.vue';

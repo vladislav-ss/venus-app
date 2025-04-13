@@ -7,7 +7,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import { getCurrentUser } from '../../api/userApi';
+import { getCurrentUser } from '../api/userApi';
 
 const username = ref('Username');
 

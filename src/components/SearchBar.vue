@@ -1,5 +1,7 @@
 <template>
-  <div class="search-bar flex items-center bg-gray-50 rounded-[10px] px-3 w-[340px] h-[46px]">
+  <div
+    class="search-bar flex items-center bg-gray-50 rounded-[10px] px-3 w-full sm:w-[340px] h-[46px]"
+  >
     <img src="../assets/images/icons/search.svg" alt="Search" class="w-[11px] h-[11px] mr-2" />
     <input
       type="text"

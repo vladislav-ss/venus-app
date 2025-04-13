@@ -39,19 +39,24 @@
           :key="item.name"
           class="menu-item flex items-center gap-3 p-3 rounded-lg"
           :class="[
-            item.isActive
+            isActive(item.route)
               ? '!bg-primary !text-white'
               : '!text-text-secondary hover:bg-secondary/10 transition-colors',
           ]"
         >
-          <img :src="item.icon" :alt="`${item.name} Icon`" />
-          <span :class="item.isActive ? 'font-bold' : 'font-medium'">{{ item.name }}</span>
+          <router-link :to="item.route" class="flex items-center gap-3 w-full">
+            <img
+              :src="isActive(item.route) ? item.activeIcon : item.icon"
+              :alt="`${item.name} Icon`"
+            />
+            <span :class="isActive(item.route) ? 'font-bold' : 'font-medium'">{{ item.name }}</span>
+          </router-link>
         </li>
       </ul>
       <button
         class="logout flex items-center gap-3 p-3 rounded-lg !text-text-secondary hover:bg-red/20 transition-colors mt-auto"
       >
-        <img src="@/assets/images/icons/logout.svg" alt="Log Out Icon" />
+        <img src="@/assets/images/icons/menu/logout.svg" alt="Log Out Icon" />
         <span class="font-medium">Log Out</span>
       </button>
     </nav>
@@ -60,27 +65,40 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import dashboardIcon from '@/assets/images/icons/dashboard.svg';
-import activityIcon from '@/assets/images/icons/activity.svg';
-import libraryIcon from '@/assets/images/icons/library.svg';
-import securityIcon from '@/assets/images/icons/security.svg';
-import schedulesIcon from '@/assets/images/icons/schedules.svg';
-import payoutsIcon from '@/assets/images/icons/payouts.svg';
-import settingsIcon from '@/assets/images/icons/settings.svg';
-import burgerIcon from '@/assets/images/icons/burger.svg';
-import closeIcon from '@/assets/images/icons/close.svg';
+import { useRoute } from 'vue-router';
+import dashboardNormalIcon from '@/assets/images/icons/menu/dashboard-normal.svg';
+import dashboardActiveIcon from '@/assets/images/icons/menu/dashboard.svg';
+import activityIcon from '@/assets/images/icons/menu/activity.svg';
+import activityActiveIcon from '@/assets/images/icons/menu/activity-active.svg';
+import libraryIcon from '@/assets/images/icons/menu/library.svg';
+import libraryActiveIcon from '@/assets/images/icons/menu/library-active.svg';
+import securityIcon from '@/assets/images/icons/menu/security.svg';
+import securityActiveIcon from '@/assets/images/icons/menu/security-active.svg';
+import schedulesIcon from '@/assets/images/icons/menu/schedules.svg';
+import schedulesActiveIcon from '@/assets/images/icons/menu/schedules-active.svg';
+import payoutsIcon from '@/assets/images/icons/menu/payouts.svg';
+import payoutsActiveIcon from '@/assets/images/icons/menu/payouts-active.svg';
+import settingsIcon from '@/assets/images/icons/menu/settings.svg';
+import settingsActiveIcon from '@/assets/images/icons/menu/settings-active.svg';
+import burgerIcon from '@/assets/images/icons/menu/burger.svg';
+import closeIcon from '@/assets/images/icons/menu/close.svg';
 
+const route = useRoute();
 const isMenuOpen = ref(false);
 
 const menuItems = [
-  { name: 'Dashboard', icon: dashboardIcon, isActive: true },
-  { name: 'Activity', icon: activityIcon, isActive: false },
-  { name: 'Library', icon: libraryIcon, isActive: false },
-  { name: 'Security', icon: securityIcon, isActive: false },
-  { name: 'Schedules', icon: schedulesIcon, isActive: false },
-  { name: 'Payouts', icon: payoutsIcon, isActive: false },
-  { name: 'Settings', icon: settingsIcon, isActive: false },
+  { name: 'Dashboard', icon: dashboardNormalIcon, activeIcon: dashboardActiveIcon, route: '/' },
+  { name: 'Activity', icon: activityIcon, activeIcon: activityActiveIcon, route: '/activity' },
+  { name: 'Library', icon: libraryIcon, activeIcon: libraryActiveIcon, route: '/library' },
+  { name: 'Security', icon: securityIcon, activeIcon: securityActiveIcon, route: '/security' },
+  { name: 'Schedules', icon: schedulesIcon, activeIcon: schedulesActiveIcon, route: '/schedules' },
+  { name: 'Payouts', icon: payoutsIcon, activeIcon: payoutsActiveIcon, route: '/payouts' },
+  { name: 'Settings', icon: settingsIcon, activeIcon: settingsActiveIcon, route: '/settings' },
 ];
+
+const isActive = (routePath: string) => {
+  return route.path === routePath;
+};
 </script>
 
 <style scoped>
