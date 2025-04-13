@@ -2,7 +2,7 @@
   <div>
     <!-- Burger Menu Button (Mobile Only) -->
     <button
-      v-show="!isMenuOpen"
+      v-if="!isMenuOpen"
       @click="isMenuOpen = !isMenuOpen"
       class="lg:hidden fixed z-50 p-2 rounded-lg bg-white shadow-sm"
       :class="['top-4', 'left-4 md:left-6 lg:left-8']"
