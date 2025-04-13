@@ -41,7 +41,7 @@
           :class="[
             item.isActive
               ? '!bg-primary !text-white'
-              : '!text-text-secondary hover:!text-text-primary hover:bg-white transition-colors',
+              : '!text-text-secondary hover:bg-secondary/10 transition-colors',
           ]"
         >
           <img :src="item.icon" :alt="`${item.name} Icon`" />
@@ -49,7 +49,7 @@
         </li>
       </ul>
       <button
-        class="logout flex items-center gap-3 p-3 rounded-lg !text-text-secondary hover:!text-text-primary hover:bg-white transition-colors mt-auto"
+        class="logout flex items-center gap-3 p-3 rounded-lg !text-text-secondary hover:bg-red/20 transition-colors mt-auto"
       >
         <img src="@/assets/images/icons/logout.svg" alt="Log Out Icon" />
         <span class="font-medium">Log Out</span>

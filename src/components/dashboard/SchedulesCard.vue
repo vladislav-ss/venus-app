@@ -8,9 +8,9 @@
         :key="schedule.id"
         class="schedule-item flex items-start gap-3"
       >
-        <div class="schedule-marker w-[3px] h-[46px] rounded-full bg-primary"></div>
+        <div class="schedule-marker w-[4px] h-[41px] rounded-full bg-primary"></div>
         <div class="flex-1">
-          <p class="text-[14px] font-medium mb-1">{{ schedule.title }}</p>
+          <p class="font-bold">{{ schedule.title }}</p>
           <p class="text-[12px] text-text-secondary">
             {{ formatTime(schedule.startTime) }} - {{ formatTime(schedule.endTime) }}
           </p>
@@ -21,7 +21,11 @@
     <div class="mt-auto flex justify-end">
       <button class="text-primary text-base font-bold flex items-center gap-2 hover:opacity-80">
         View all
-        <img src="@/assets/images/icons/arrow-right.svg" alt="Arrow right" class="w-[24px] h-[24px]" />
+        <img
+          src="@/assets/images/icons/arrow-right.svg"
+          alt="Arrow right"
+          class="w-[24px] h-[24px]"
+        />
       </button>
     </div>
   </div>
@@ -65,7 +69,6 @@ function formatTime(time: string): string {
   return formattedHour + ':' + minutes + ' ' + period;
 }
 
-// Fetch schedules on component mount
 getSchedulesCurrentUser()
   .then((response) => {
     schedules.value = response;

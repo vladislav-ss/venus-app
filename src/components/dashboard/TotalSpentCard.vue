@@ -27,7 +27,8 @@ import { getExpensesCurrentUser } from '../../api/expensesApi';
 import { getBarChartOptions } from '../../config/chartOptions';
 
 const totalSpent = ref(0);
-const chartOptions = getBarChartOptions('monthly');
+const monthlyAverage = ref(0);
+const chartOptions = ref(getBarChartOptions('monthly'));
 
 const chartSeries = ref([
   {
@@ -46,6 +47,15 @@ onMounted(async () => {
       const month = date.getMonth();
       monthlyTotals[month] += expense.amount;
     });
+
+    // Calculate monthly average (excluding months with zero spending)
+    const nonZeroMonths = monthlyTotals.filter((amount) => amount > 0).length;
+    monthlyAverage.value = Math.round(
+      monthlyTotals.reduce((acc, curr) => acc + curr, 0) / (nonZeroMonths || 1),
+    );
+
+    // Update chart options with the average line
+    chartOptions.value = getBarChartOptions('monthly', monthlyAverage.value);
 
     chartSeries.value = [
       {

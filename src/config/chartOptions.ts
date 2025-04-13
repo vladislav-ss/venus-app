@@ -1,6 +1,6 @@
 export type ChartDataType = 'weekly' | 'monthly';
 
-export const getBarChartOptions = (type: ChartDataType) => {
+export const getBarChartOptions = (type: ChartDataType, average?: number) => {
   const categories =
     type === 'weekly'
       ? ['Week 1', 'Week 2', 'Week 3', 'Week 4']
@@ -52,9 +52,34 @@ export const getBarChartOptions = (type: ChartDataType) => {
     yaxis: {
       show: false,
     },
+    annotations: average
+      ? {
+          yaxis: [
+            {
+              y: average,
+              borderColor: '#4318FF',
+              borderWidth: 1,
+              borderDash: [15, 8],
+              label: {
+                text: `$${average}`,
+                position: 'right',
+                offsetX: 5,
+                style: {
+                  color: '#4318FF',
+                  fontSize: '12px',
+                  fontWeight: '500',
+                  background: 'transparent',
+                },
+                borderWidth: 0,
+                background: 'transparent',
+              },
+            },
+          ],
+        }
+      : undefined,
     grid: {
       show: true,
-      borderColor: '#4318ff',
+      borderColor: '#E2E8F0',
       strokeDashArray: 5,
       xaxis: {
         lines: {
