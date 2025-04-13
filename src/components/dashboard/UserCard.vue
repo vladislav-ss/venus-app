@@ -8,7 +8,7 @@
           class="w-[130px] h-[130px] rounded-full object-cover"
         />
       </div>
-      <h3 class="text-[24px] font-bold text-text-primary mb-1">{{ userName }}</h3>
+      <h3 class="text-[24px] font-bold text-text-primary mb-1 md:text-center">{{ userName }}</h3>
       <div class="location flex items-center gap-1 mb-6">
         <img src="@/assets/images/icons/location.svg" alt="Location" class="w-[10px] h-[14px]" />
         <span class="text-text-secondary text-sm">{{ location }}</span>

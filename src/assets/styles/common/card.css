@@ -5,8 +5,6 @@
 
   .quick-stat {
     @apply p-6;
-
-    min-width: 259px;
   }
 
   .label {
