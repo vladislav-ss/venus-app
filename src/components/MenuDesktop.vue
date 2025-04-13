@@ -1,5 +1,5 @@
 <template>
-  <nav class="menu flex flex-col h-screen w-[290px] bg-white p-8">
+  <nav class="menu flex flex-col h-screen bg-white p-8">
     <div class="logo mb-8">
       <img src="@/assets/images/logo-w-text.svg" alt="Venus Logo" />
     </div>
@@ -11,8 +11,8 @@
         class="menu-item flex items-center gap-3 p-3 rounded-lg"
         :class="[
           item.isActive
-            ? '!bg-[#4318ff] !text-white'
-            : '!text-[#A3AED0] hover:!text-[#1b2559] hover:bg-white transition-colors',
+            ? '!bg-primary !text-white'
+            : '!text-text-secondary hover:!text-text-primary hover:bg-white transition-colors',
         ]"
       >
         <img :src="item.icon" :alt="`${item.name} Icon`" />
@@ -20,7 +20,7 @@
       </li>
     </ul>
     <button
-      class="logout flex items-center gap-3 p-3 rounded-lg !text-[#A3AED0] hover:!text-[#1b2559] hover:bg-white transition-colors mt-auto"
+      class="logout flex items-center gap-3 p-3 rounded-lg !text-text-secondary hover:!text-text-primary hover:bg-white transition-colors mt-auto"
     >
       <img src="@/assets/images/icons/logout.svg" alt="Log Out Icon" />
       <span class="font-medium">Log Out</span>

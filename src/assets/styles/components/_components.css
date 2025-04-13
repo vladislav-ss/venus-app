@@ -1,1 +1,4 @@
-
+@import './total-spent-card.css';
+@import './spent-this-month.css';
+@import './transactions-card.css';
+@import './activity-card.css';

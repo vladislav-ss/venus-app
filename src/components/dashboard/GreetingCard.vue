@@ -1,6 +1,6 @@
 <template>
   <div class="greeting-card">
-    <h3 class="text-sm font-bold">Hi {{ username }},</h3>
+    <h3 class="text-sm font-bold text-text-secondary">Hi {{ username }},</h3>
     <h1 class="font-bold">Welcome to Venus!</h1>
   </div>
 </template>

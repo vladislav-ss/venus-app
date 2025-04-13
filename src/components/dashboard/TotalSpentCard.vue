@@ -2,11 +2,17 @@
   <div class="total-spent-card card">
     <div class="flex justify-between items-start mb-6">
       <div>
-        <p class="text-[14px] text-text-secondary font-medium mb-1">Total Spent</p>
-        <p class="text-[24px] font-bold">${{ totalSpent }}</p>
+        <p class="label mb-1">Total Spent</p>
+        <p class="amount">${{ totalSpent }}</p>
       </div>
-      <div class="chart-stats flex items-center">
-        <img src="@/assets/images/icons/chart-stats.svg" alt="Chart Stats" class="w-4 h-4" />
+      <div
+        class="icon-container flex items-center justify-center bg-gray-100 rounded-[7px] w-[33px] h-[33px]"
+      >
+        <img
+          src="@/assets/images/icons/chart-stats.svg"
+          alt="Chart Stats"
+          class="w-[20px] h-[20px]"
+        />
       </div>
     </div>
     <div class="chart-container h-[200px]">
@@ -18,83 +24,10 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import { getExpensesCurrentUser } from '../../api/expensesApi';
+import { getBarChartOptions } from '../../config/chartOptions';
 
 const totalSpent = ref(0);
-
-const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-
-const chartOptions = {
-  chart: {
-    type: 'bar',
-    toolbar: {
-      show: false,
-    },
-    sparkline: {
-      enabled: false,
-    },
-  },
-  plotOptions: {
-    bar: {
-      borderRadius: 4,
-      columnWidth: '40%',
-      colors: {
-        ranges: [
-          {
-            from: 0,
-            to: Infinity,
-            color: '#E9EDF7',
-          },
-        ],
-      },
-    },
-  },
-  dataLabels: {
-    enabled: false,
-  },
-  xaxis: {
-    categories: months,
-    labels: {
-      style: {
-        colors: '#A3AED0',
-        fontSize: '12px',
-      },
-    },
-    axisBorder: {
-      show: false,
-    },
-    axisTicks: {
-      show: false,
-    },
-  },
-  yaxis: {
-    show: false,
-  },
-  grid: {
-    show: false,
-    padding: {
-      top: 0,
-      right: 0,
-      bottom: 0,
-      left: 0,
-    },
-  },
-  colors: ['#4318FF'],
-  states: {
-    hover: {
-      filter: {
-        type: 'darken',
-        value: 0.8,
-      },
-    },
-  },
-  tooltip: {
-    enabled: true,
-    theme: 'light',
-    y: {
-      formatter: (value: number) => `$${value}`,
-    },
-  },
-};
+const chartOptions = getBarChartOptions('monthly');
 
 const chartSeries = ref([
   {
@@ -130,9 +63,6 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-.total-spent-card {
-}
-
 .chart-container :deep(.apexcharts-bar-series) path {
   transition: fill 0.2s ease;
 }

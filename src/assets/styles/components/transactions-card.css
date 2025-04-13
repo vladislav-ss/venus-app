@@ -1,0 +1,13 @@
+.transactions-card {
+  .description {
+    @apply font-bold;
+
+    font-size: 16px;
+  }
+
+  .date {
+    @apply text-text-secondary;
+
+    font-size: 12px;
+  }
+}

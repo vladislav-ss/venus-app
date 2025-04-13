@@ -1,7 +1,15 @@
 <template>
-  <div class="earnings-card quick-stat card">
-    <p class="label">Activity</p>
-    <p class="amount">${{ activity }}</p>
+  <div class="activity-card quick-stat card">
+    <div class="flex justify-between">
+      <div class="info-container">
+        <p class="label">Activity</p>
+        <p class="amount">${{ activity }}</p>
+      </div>
+
+      <div class="image-container flex items-end">
+        <img src="@/assets/images/graphics/activity-chart.svg" alt="Activity graph" />
+      </div>
+    </div>
   </div>
 </template>
 

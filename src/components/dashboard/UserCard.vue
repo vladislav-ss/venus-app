@@ -11,21 +11,21 @@
       <h3 class="text-[24px] font-bold text-text-primary mb-1">{{ userName }}</h3>
       <div class="location flex items-center gap-1 mb-6">
         <img src="@/assets/images/icons/location.svg" alt="Location" class="w-[10px] h-[14px]" />
-        <span class="text-[#A3AED0] text-sm">{{ location }}</span>
+        <span class="text-text-secondary text-sm">{{ location }}</span>
       </div>
 
       <div class="stats grid grid-cols-3 gap-8 w-full">
         <div class="stat flex flex-col items-center">
-          <span class="text-[12px] text-[#A3AED0]">Projects</span>
-          <span class="text-[24px] font-bold text-[#1B2559]">{{ stats.projects }}</span>
+          <span class="text-[12px] text-text-secondary">Projects</span>
+          <span class="text-[24px] font-bold text-text-primary">{{ stats.projects }}</span>
         </div>
         <div class="stat flex flex-col items-center">
-          <span class="text-[12px] text-[#A3AED0]">Followers</span>
-          <span class="text-[24px] font-bold text-[#1B2559]">{{ stats.followers }}</span>
+          <span class="text-[12px] text-text-secondary">Followers</span>
+          <span class="text-[24px] font-bold text-text-primary">{{ stats.followers }}</span>
         </div>
         <div class="stat flex flex-col items-center">
-          <span class="text-[12px] text-[#A3AED0]">Following</span>
-          <span class="text-[24px] font-bold text-[#1B2559]">{{ stats.following }}</span>
+          <span class="text-[12px] text-text-secondary">Following</span>
+          <span class="text-[24px] font-bold text-text-primary">{{ stats.following }}</span>
         </div>
       </div>
     </div>

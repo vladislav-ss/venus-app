@@ -1,21 +1,20 @@
 <template>
   <div class="spent-this-month-card card">
-    <!-- Header with amount and status -->
     <div class="flex justify-between items-start mb-6">
       <div>
-        <p class="text-[14px] text-[#A3AED0] font-medium mb-1">Spent this month</p>
-        <p class="text-[24px] font-bold text-[#1B2559]">${{ spentThisMonth }}</p>
-      </div>
-      <div class="flex items-center gap-2">
-        <span class="text-[#05CD99] text-[14px] font-medium">+2.45%</span>
+        <p class="label mb-1">Spent this month</p>
+        <h1 class="amount">${{ spentThisMonth }}</h1>
         <div class="flex items-center gap-1">
-          <div class="w-2 h-2 rounded-full bg-[#05CD99]"></div>
-          <span class="text-[14px] text-[#05CD99] font-medium">On track</span>
+          <div class="icon-container">
+            <img src="@/assets/images/icons/checkmark.svg" alt="Check" class="w-[15px] h-[15px]" />
+          </div>
+          <span class="text-[14px] text-green font-medium">On track</span>
         </div>
       </div>
+
+      <span class="text-green text-[14px] font-medium">+2.45%</span>
     </div>
 
-    <!-- Weekly spending chart -->
     <div class="chart-container h-[200px]">
       <apexchart type="bar" height="200" :options="chartOptions" :series="chartSeries" />
     </div>
@@ -25,95 +24,10 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import { getExpensesCurrentUser } from '../../api/expensesApi';
+import { getBarChartOptions } from '../../config/chartOptions';
 
 const spentThisMonth = ref(0);
-
-const chartOptions = {
-  chart: {
-    type: 'bar',
-    toolbar: {
-      show: false,
-    },
-    sparkline: {
-      enabled: false,
-    },
-  },
-  plotOptions: {
-    bar: {
-      borderRadius: 4,
-      columnWidth: '40%',
-      colors: {
-        ranges: [
-          {
-            from: 0,
-            to: Infinity,
-            color: '#E9EDF7',
-          },
-        ],
-      },
-    },
-  },
-  dataLabels: {
-    enabled: false,
-  },
-  xaxis: {
-    categories: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
-    labels: {
-      style: {
-        colors: '#A3AED0',
-        fontSize: '12px',
-      },
-    },
-    axisBorder: {
-      show: false,
-    },
-    axisTicks: {
-      show: false,
-    },
-  },
-  yaxis: {
-    show: false,
-  },
-  grid: {
-    show: true,
-    borderColor: '#E9EDF7',
-    strokeDashArray: 5,
-    xaxis: {
-      lines: {
-        show: false,
-      },
-    },
-    yaxis: {
-      lines: {
-        show: true,
-      },
-    },
-    padding: {
-      top: 0,
-      right: 0,
-      bottom: 0,
-      left: 0,
-    },
-  },
-  colors: ['#4318FF'],
-  states: {
-    hover: {
-      filter: {
-        type: 'darken',
-        value: 0.8,
-      },
-    },
-  },
-  tooltip: {
-    enabled: true,
-    theme: 'light',
-    y: {
-      formatter: function (value: number) {
-        return '$' + value;
-      },
-    },
-  },
-};
+const chartOptions = getBarChartOptions('weekly');
 
 const chartSeries = ref([
   {

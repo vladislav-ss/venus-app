@@ -1,0 +1,5 @@
+.total-spent-card {
+  .amount {
+    @apply text-[34px];
+  }
+}

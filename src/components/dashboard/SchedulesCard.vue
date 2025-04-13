@@ -1,6 +1,6 @@
 <template>
   <div class="schedules-card card">
-    <h3 class="text-[18px] font-bold text-[#1B2559] mb-6">{{ formatDate(currentDate) }}</h3>
+    <h1 class="mb-6">{{ formatDate(currentDate) }}</h1>
 
     <div class="schedules-list flex flex-col gap-6 mb-6">
       <div
@@ -8,10 +8,10 @@
         :key="schedule.id"
         class="schedule-item flex items-start gap-3"
       >
-        <div class="schedule-marker w-[3px] h-[46px] rounded-full bg-[#4318FF]"></div>
+        <div class="schedule-marker w-[3px] h-[46px] rounded-full bg-primary"></div>
         <div class="flex-1">
-          <p class="text-[14px] font-medium text-[#1B2559] mb-1">{{ schedule.title }}</p>
-          <p class="text-[12px] text-[#A3AED0]">
+          <p class="text-[14px] font-medium mb-1">{{ schedule.title }}</p>
+          <p class="text-[12px] text-text-secondary">
             {{ formatTime(schedule.startTime) }} - {{ formatTime(schedule.endTime) }}
           </p>
         </div>
@@ -19,37 +19,9 @@
     </div>
 
     <div class="flex justify-end">
-      <button class="text-[#4318FF] text-sm font-medium flex items-center gap-2 hover:opacity-80">
+      <button class="text-primary text-sm font-bold flex items-center gap-2 hover:opacity-80">
         View all
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M4.16666 10H15.8333"
-            stroke="currentColor"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M10.8333 15L15.8333 10"
-            stroke="currentColor"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M10.8333 5L15.8333 10"
-            stroke="currentColor"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
+        <img src="@/assets/images/icons/arrow-right.svg" alt="Arrow right" class="w-5 h-5" />
       </button>
     </div>
   </div>

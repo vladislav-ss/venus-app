@@ -1,0 +1,5 @@
+.spent-this-month-card {
+  .amount {
+    @apply text-[34px];
+  }
+}

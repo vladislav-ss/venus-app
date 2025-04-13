@@ -1,7 +1,9 @@
 <template>
-  <div id="app" class="flex">
-    <Menu />
-    <Dashboard />
+  <div id="app" class="flex min-h-screen">
+    <Menu class="fixed w-[290px]" />
+    <div class="flex-1 ml-[290px]">
+      <Dashboard />
+    </div>
   </div>
 </template>
 

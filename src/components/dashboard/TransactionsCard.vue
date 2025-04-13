@@ -1,6 +1,6 @@
 <template>
   <div class="transactions-card card">
-    <h3 class="text-[18px] font-bold text-[#1B2559] mb-6">Your transactions</h3>
+    <h3 class="text-[18px] font-bold text-text-primary mb-6">Your transactions</h3>
 
     <div class="transactions-list flex flex-col gap-4 mb-6">
       <div
@@ -9,7 +9,7 @@
         class="transaction-item flex items-center gap-3"
       >
         <div
-          class="icon-container bg-[#F6F8FD] rounded-full w-10 h-10 flex items-center justify-center"
+          class="icon-container bg-gray-100 rounded-full w-10 h-10 flex items-center justify-center"
         >
           <img
             :src="'/src/assets/images/icons/' + getTransactionType(transaction) + '.svg'"
@@ -18,14 +18,14 @@
           />
         </div>
         <div class="flex-1">
-          <p class="text-[14px] font-medium text-[#1B2559]">{{ transaction.description }}</p>
-          <p class="text-[12px] text-[#A3AED0]">{{ formatDate(transaction.date) }}</p>
+          <p class="description">{{ transaction.description }}</p>
+          <p class="date">{{ formatDate(transaction.date) }}</p>
         </div>
       </div>
     </div>
 
     <div class="flex justify-end">
-      <button class="text-[#4318FF] text-sm font-medium flex items-center gap-2 hover:opacity-80">
+      <button class="text-primary text-sm font-bold flex items-center gap-2 hover:opacity-80">
         View all
         <img src="@/assets/images/icons/arrow-right.svg" alt="Arrow right" class="w-5 h-5" />
       </button>

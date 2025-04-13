@@ -1,0 +1,8 @@
+.activity-card {
+  background: var(--gradient-primary);
+
+  .label,
+  .amount {
+    @apply text-white;
+  }
+}

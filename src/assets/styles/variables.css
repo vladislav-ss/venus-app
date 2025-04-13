@@ -1,0 +1,14 @@
+@theme {
+  --color-primary: #4318ff;
+  --color-secondary: #a3aed0;
+  --color-background: #e9edf7;
+  --color-text-primary: #1b2559;
+  --color-text-secondary: #a3aed0;
+  --color-green: #05cd99;
+  --color-red: #ff4d4d;
+  --color-black: #000;
+  --color-white: #fff;
+  --gradient-primary: linear-gradient(to bottom right, #868cff, #4318ff);
+
+  --font-sans: 'DM Sans', sans-serif;
+}
