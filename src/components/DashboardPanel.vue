@@ -23,6 +23,9 @@
         <div class="w-1/3">
           <SpentThisMonthCard />
         </div>
+        <div class="w-1/3">
+          <TransactionsCard />
+        </div>
       </div>
     </div>
   </main>
@@ -38,6 +41,7 @@ import ActivityCard from './dashboard/ActivityCard.vue';
 import TotalSpentCard from './dashboard/TotalSpentCard.vue';
 import UserCard from './dashboard/UserCard.vue';
 import SpentThisMonthCard from './dashboard/SpentThisMonthCard.vue';
+import TransactionsCard from './dashboard/TransactionsCard.vue';
 </script>
 
 <style scoped></style>
