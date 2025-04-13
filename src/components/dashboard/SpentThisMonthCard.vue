@@ -1,18 +1,28 @@
 <template>
   <div class="spent-this-month-card card">
-    <div class="flex justify-between items-start mb-6">
-      <div>
+    <div class="flex justify-between items-start">
+      <div class="flex flex-col gap-2">
         <p class="label mb-1">Spent this month</p>
         <h1 class="amount">${{ spentThisMonth }}</h1>
         <div class="flex items-center gap-1">
           <div class="icon-container">
-            <img src="@/assets/images/icons/checkmark.svg" alt="Check" class="w-[15px] h-[15px]" />
+            <img
+              :src="percentageChange < 0 ? checkmarkIcon : xMarkIcon"
+              :alt="percentageChange < 0 ? 'Check' : 'X'"
+              class="w-[15px] h-[15px]"
+            />
           </div>
-          <span class="text-[14px] text-green font-medium">On track</span>
+          <span
+            :class="[percentageChange < 0 ? 'text-green' : 'text-red', 'text-[14px]', 'font-bold']"
+          >
+            {{ percentageChange < 0 ? 'On track' : 'Over budget' }}
+          </span>
         </div>
       </div>
 
-      <span class="text-green text-[14px] font-medium">+2.45%</span>
+      <span :class="[percentageChange < 0 ? 'text-green' : 'text-red', 'text-[12px]', 'font-bold']">
+        {{ percentageChange >= 0 ? '+' : '' }}{{ percentageChange.toFixed(2) }}%
+      </span>
     </div>
 
     <div class="chart-container h-[200px]">
@@ -25,8 +35,12 @@
 import { ref, onMounted } from 'vue';
 import { getExpensesCurrentUser } from '../../api/expensesApi';
 import { getBarChartOptions } from '../../config/chartOptions';
+import checkmarkIcon from '@/assets/images/icons/checkmark.svg';
+import xMarkIcon from '@/assets/images/icons/x-mark.svg';
 
 const spentThisMonth = ref(0);
+const spentLastMonth = ref(0);
+const percentageChange = ref(0);
 const chartOptions = getBarChartOptions('weekly');
 
 const chartSeries = ref([
@@ -42,6 +56,8 @@ onMounted(async () => {
     const currentDate = new Date();
     const currentMonth = currentDate.getMonth();
     const currentYear = currentDate.getFullYear();
+    const lastMonth = currentMonth === 0 ? 11 : currentMonth - 1;
+    const lastMonthYear = currentMonth === 0 ? currentYear - 1 : currentYear;
 
     // Filter current month's expenses
     const currentMonthExpenses = expenses.filter((expense) => {
@@ -49,11 +65,24 @@ onMounted(async () => {
       return expenseDate.getMonth() === currentMonth && expenseDate.getFullYear() === currentYear;
     });
 
-    // Calculate total spent this month
+    // Filter last month's expenses
+    const lastMonthExpenses = expenses.filter((expense) => {
+      const expenseDate = new Date(expense.date);
+      return expenseDate.getMonth() === lastMonth && expenseDate.getFullYear() === lastMonthYear;
+    });
+
+    // Calculate totals
     spentThisMonth.value = currentMonthExpenses.reduce(
       (total, expense) => total + expense.amount,
       0,
     );
+    spentLastMonth.value = lastMonthExpenses.reduce((total, expense) => total + expense.amount, 0);
+
+    // Calculate percentage change
+    percentageChange.value =
+      spentLastMonth.value === 0
+        ? 0
+        : ((spentThisMonth.value - spentLastMonth.value) / spentLastMonth.value) * 100;
 
     // Group expenses by week and calculate weekly totals
     const weeklyTotals = Array(4).fill(0);
@@ -76,13 +105,3 @@ onMounted(async () => {
   }
 });
 </script>
-
-<style scoped>
-.spent-this-month-card {
-  @apply rounded-[20px] px-[30px] py-[30px];
-}
-
-.chart-container :deep(.apexcharts-bar-series) path {
-  transition: fill 0.2s ease;
-}
-</style>

@@ -1,12 +1,12 @@
 <template>
-  <div class="transactions-card card">
-    <h3 class="text-[18px] font-bold text-text-primary mb-6">Your transactions</h3>
+  <div class="transactions-card card flex flex-col h-full">
+    <h3 class="font-bold text-text-primary mb-6">Your transactions</h3>
 
-    <div class="transactions-list flex flex-col gap-4 mb-6">
+    <div class="transactions-list flex flex-col gap-4 mb-6 flex-1">
       <div
         v-for="transaction in transactions"
         :key="transaction.id"
-        class="transaction-item flex items-center gap-3"
+        class="transaction-item flex items-center gap-4 mb-4"
       >
         <div
           class="icon-container bg-gray-100 rounded-full w-10 h-10 flex items-center justify-center"
@@ -24,10 +24,16 @@
       </div>
     </div>
 
-    <div class="flex justify-end">
-      <button class="text-primary text-sm font-bold flex items-center gap-2 hover:opacity-80">
+    <div class="mt-auto flex justify-end">
+      <button
+        class="text-primary text-base font-bold flex items-center gap-2 hover:opacity-80 transition-opacity"
+      >
         View all
-        <img src="@/assets/images/icons/arrow-right.svg" alt="Arrow right" class="w-5 h-5" />
+        <img
+          src="@/assets/images/icons/arrow-right.svg"
+          alt="Arrow right"
+          class="[24px] h-[24px]"
+        />
       </button>
     </div>
   </div>
@@ -63,8 +69,10 @@ function formatDate(dateString: string) {
 onMounted(async () => {
   try {
     const expenses = await getExpensesCurrentUser();
-    // Get the last 3 transactions
-    transactions.value = expenses.slice(-3).reverse();
+    // Sort expenses by date in descending order and get the 3 most recent
+    transactions.value = expenses
+      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+      .slice(0, 3);
   } catch (error) {
     console.error('Error fetching transactions:', error);
   }

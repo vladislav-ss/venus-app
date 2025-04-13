@@ -1,8 +1,8 @@
 <template>
-  <div class="schedules-card card">
+  <div class="schedules-card card flex flex-col h-full">
     <h1 class="mb-6">{{ formatDate(currentDate) }}</h1>
 
-    <div class="schedules-list flex flex-col gap-6 mb-6">
+    <div class="schedules-list flex flex-col gap-6 mb-6 flex-1">
       <div
         v-for="schedule in todaySchedules"
         :key="schedule.id"
@@ -18,10 +18,10 @@
       </div>
     </div>
 
-    <div class="flex justify-end">
-      <button class="text-primary text-sm font-bold flex items-center gap-2 hover:opacity-80">
+    <div class="mt-auto flex justify-end">
+      <button class="text-primary text-base font-bold flex items-center gap-2 hover:opacity-80">
         View all
-        <img src="@/assets/images/icons/arrow-right.svg" alt="Arrow right" class="w-5 h-5" />
+        <img src="@/assets/images/icons/arrow-right.svg" alt="Arrow right" class="w-[24px] h-[24px]" />
       </button>
     </div>
   </div>

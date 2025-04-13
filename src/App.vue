@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import Menu from './components/MenuDesktop.vue';
+import Menu from './components/NavigationMenu.vue';
 import Dashboard from './components/DashboardPanel.vue';
 </script>
 

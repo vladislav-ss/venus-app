@@ -6,7 +6,7 @@
         <p class="amount">${{ activity }}</p>
       </div>
 
-      <div class="image-container flex items-end">
+      <div class="image-container flex">
         <img src="@/assets/images/graphics/activity-chart.svg" alt="Activity graph" />
       </div>
     </div>

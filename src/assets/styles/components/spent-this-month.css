@@ -2,4 +2,8 @@
   .amount {
     @apply text-[34px];
   }
+
+  .chart-container :deep(.apexcharts-bar-series) path {
+    transition: fill 0.2s ease;
+  }
 }
