@@ -2,82 +2,82 @@
   {
     "id": 1,
     "userId": 1,
-    "title": "Meet w/ Simmmple",
-    "date": "2025-04-27",
-    "startTime": "10:00:00",
-    "endTime": "11:00:00"
+    "title": "Meet w/ Sarah",
+    "startTime": "09:00",
+    "endTime": "10:00",
+    "date": "2025-04-13"
   },
   {
     "id": 2,
     "userId": 1,
-    "title": "Fitness Training",
-    "date": "2025-04-27",
-    "startTime": "12:00:00",
-    "endTime": "13:00:00"
+    "title": "Client Consultation",
+    "startTime": "11:30",
+    "endTime": "12:30",
+    "date": "2025-04-13"
   },
   {
     "id": 3,
     "userId": 1,
-    "title": "Reading time",
-    "date": "2025-04-27",
-    "startTime": "12:00:00",
-    "endTime": "13:00:00"
+    "title": "Team Meeting",
+    "startTime": "14:00",
+    "endTime": "15:00",
+    "date": "2025-04-13"
   },
   {
     "id": 4,
     "userId": 1,
-    "title": "Hair Styling Appointment",
-    "date": "2025-04-28",
-    "startTime": "09:00:00",
-    "endTime": "10:30:00"
+    "title": "Hair Styling Session",
+    "startTime": "16:00",
+    "endTime": "17:30",
+    "date": "2025-04-13"
   },
   {
     "id": 5,
     "userId": 1,
-    "title": "Makeup Session",
-    "date": "2025-04-28",
-    "startTime": "11:00:00",
-    "endTime": "12:30:00"
+    "title": "Makeup Workshop",
+    "startTime": "10:00",
+    "endTime": "12:00",
+    "date": "2025-04-14"
   },
   {
     "id": 6,
     "userId": 1,
-    "title": "Spa Treatment",
-    "date": "2025-04-28",
-    "startTime": "14:00:00",
-    "endTime": "15:30:00"
+    "title": "Supply Inventory",
+    "startTime": "13:00",
+    "endTime": "14:00",
+    "date": "2025-04-14"
   },
   {
     "id": 7,
-    "userId": 2,
-    "title": "Hair Coloring",
-    "date": "2025-04-29",
-    "startTime": "10:00:00",
-    "endTime": "12:00:00"
+    "userId": 1,
+    "title": "Staff Training",
+    "startTime": "09:30",
+    "endTime": "11:30",
+    "date": "2025-04-15"
   },
   {
     "id": 8,
-    "userId": 2,
-    "title": "Manicure & Pedicure",
-    "date": "2025-04-29",
-    "startTime": "13:00:00",
-    "endTime": "14:30:00"
+    "userId": 1,
+    "title": "Marketing Review",
+    "startTime": "13:30",
+    "endTime": "14:30",
+    "date": "2025-04-15"
   },
   {
     "id": 9,
-    "userId": 2,
-    "title": "Facial Treatment",
-    "date": "2025-04-29",
-    "startTime": "15:00:00",
-    "endTime": "16:30:00"
+    "userId": 1,
+    "title": "Client Appointments",
+    "startTime": "15:00",
+    "endTime": "18:00",
+    "date": "2025-04-15"
   },
   {
     "id": 10,
-    "userId": 3,
-    "title": "Hair Extensions",
-    "date": "2025-04-30",
-    "startTime": "09:00:00",
-    "endTime": "11:00:00"
+    "userId": 1,
+    "title": "Website Update Meeting",
+    "startTime": "10:00",
+    "endTime": "11:00",
+    "date": "2025-04-16"
   },
   {
     "id": 11,
