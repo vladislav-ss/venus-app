@@ -1,7 +1,7 @@
 <template>
-  <div class="new-clients-card card">
-    <h3 class="font-bold">New Clients</h3>
-    <p class="client-count">{{ newClientsCount }}</p>
+  <div class="new-clients-card quick-stat card">
+    <p class="label">New Clients</p>
+    <p class="amount">{{ newClientsCount }}</p>
   </div>
 </template>
 

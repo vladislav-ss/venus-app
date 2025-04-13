@@ -1,9 +1,0 @@
-.menu {
-  width: 290px;
-  height: 100vh;
-  background-color: #f8f8f8;
-  padding: 2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}

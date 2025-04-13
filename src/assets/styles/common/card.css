@@ -1,3 +1,15 @@
-.card {
-  @apply bg-white rounded-lg p-4;
+@layer components {
+  .card {
+    @apply rounded-[20px] p-4 bg-white;
+  }
+
+  .quick-stat .label {
+    @apply text-[14px] leading-6 font-medium mb-1;
+
+    color: var(--text-secondary);
+  }
+
+  .quick-stat .amount {
+    @apply text-[24px] leading-[30px] font-bold;
+  }
 }

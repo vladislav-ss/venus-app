@@ -1,7 +1,7 @@
 <template>
-  <div class="spent-this-month-card card">
+  <div class="spent-this-month-card quick-stat card">
     <div class="amount-container">
-      <h3 class="font-bold">Spent this month</h3>
+      <p class="label">Spent this month</p>
       <p class="amount">${{ spentThisMonth }}</p>
     </div>
   </div>

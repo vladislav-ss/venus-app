@@ -1,7 +1,7 @@
 <template>
-  <div class="earnings-card card">
-    <h3 class="font-bold">Activity</h3>
-    <p class="client-count">${{ activity }}</p>
+  <div class="earnings-card quick-stat card">
+    <p class="label">Activity</p>
+    <p class="amount">${{ activity }}</p>
   </div>
 </template>
 
