@@ -6,17 +6,22 @@
     </div>
     <div class="content">
       <div class="quick-stats grid grid-cols-4 gap-6 mb-8">
-        <SpentThisMonthCard />
+        <QuickSpentCard />
         <NewClientsCard />
         <EarningsCard />
         <ActivityCard />
       </div>
-      <div class="main-content flex gap-6">
+      <div class="main-content flex gap-6 mb-6">
         <div class="w-2/3">
-          <TotalSpentCard class="mb-6" />
+          <TotalSpentCard />
         </div>
-        <div class="sidebar w-1/3">
+        <div class="w-1/3">
           <UserCard />
+        </div>
+      </div>
+      <div class="main-content flex gap-6">
+        <div class="w-1/3">
+          <SpentThisMonthCard />
         </div>
       </div>
     </div>
@@ -26,12 +31,13 @@
 <script setup lang="ts">
 import GreetingCard from './dashboard/GreetingCard.vue';
 import SearchBar from './SearchBar.vue';
-import SpentThisMonthCard from './dashboard/SpentThisMonthCard.vue';
+import QuickSpentCard from './dashboard/QuickSpentCard.vue';
 import NewClientsCard from './dashboard/NewClientsCard.vue';
 import EarningsCard from './dashboard/EarningsCard.vue';
 import ActivityCard from './dashboard/ActivityCard.vue';
 import TotalSpentCard from './dashboard/TotalSpentCard.vue';
 import UserCard from './dashboard/UserCard.vue';
+import SpentThisMonthCard from './dashboard/SpentThisMonthCard.vue';
 </script>
 
 <style scoped></style>
