@@ -24,11 +24,11 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import { getExpensesCurrentUser } from '../../api/expensesApi';
-import { getBarChartOptions } from '../../config/chartOptions';
+import { getMonthlyChartOptions } from '../../config/monthlyChartOptions';
 
 const totalSpent = ref(0);
 const monthlyAverage = ref(0);
-const chartOptions = ref(getBarChartOptions('monthly'));
+const chartOptions = ref(getMonthlyChartOptions());
 
 const chartSeries = ref([
   {
@@ -55,7 +55,7 @@ onMounted(async () => {
     );
 
     // Update chart options with the average line
-    chartOptions.value = getBarChartOptions('monthly', monthlyAverage.value);
+    chartOptions.value = getMonthlyChartOptions(monthlyAverage.value);
 
     chartSeries.value = [
       {

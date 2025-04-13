@@ -34,14 +34,14 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import { getExpensesCurrentUser } from '../../api/expensesApi';
-import { getBarChartOptions } from '../../config/chartOptions';
+import { getWeeklyChartOptions } from '../../config/weeklyChartOptions';
 import checkmarkIcon from '@/assets/images/icons/checkmark.svg';
 import xMarkIcon from '@/assets/images/icons/x-mark.svg';
 
 const spentThisMonth = ref(0);
 const spentLastMonth = ref(0);
 const percentageChange = ref(0);
-const chartOptions = getBarChartOptions('weekly');
+const chartOptions = getWeeklyChartOptions();
 
 const chartSeries = ref([
   {
