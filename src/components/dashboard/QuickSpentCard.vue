@@ -1,8 +1,14 @@
 <template>
   <div class="quick-spent-card quick-stat card">
-    <div class="amount-container">
-      <p class="label">Spent this month</p>
-      <p class="amount">${{ spentThisMonth }}</p>
+    <div class="flex items-center justify-between">
+      <div class="info-container">
+        <p class="label">Spent this month</p>
+        <p class="amount">{{ spentThisMonth }}</p>
+      </div>
+
+      <div class="image-container">
+        <img src="@/assets/images/graphics/bars.svg" alt="Bars graph" />
+      </div>
     </div>
   </div>
 </template>

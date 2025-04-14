@@ -49,12 +49,19 @@ const transactions = ref<Expense[]>([]);
 function getTransactionType(transaction: Expense): string {
   // Map expense descriptions to icon types
   const description = transaction.description.toLowerCase();
-  if (description.includes('transport') || description.includes('travel')) {
+
+  if (
+    description.includes('transport') ||
+    description.includes('travel') ||
+    description.includes('train')
+  ) {
     return 'public-transport';
   }
+
   if (description.includes('subscription') || description.includes('software')) {
     return 'subscriptions';
   }
+
   return 'shopping';
 }
 
@@ -63,6 +70,7 @@ function formatDate(dateString: string) {
   const day = date.getDate();
   const month = date.toLocaleString('default', { month: 'long' });
   const year = date.getFullYear();
+  
   return day + ' ' + month + ' ' + year;
 }
 

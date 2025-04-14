@@ -2,8 +2,8 @@
   {
     "id": 1,
     "userId": 1,
-    "description": "Salon Supplies",
-    "amount": 120.5,
+    "description": "Public Transport Monthly Pass",
+    "amount": 100.0,
     "date": "2025-04-15"
   },
   {
@@ -16,21 +16,21 @@
   {
     "id": 3,
     "userId": 1,
-    "description": "Marketing",
-    "amount": 50.0,
+    "description": "Adobe Creative Cloud Subscription",
+    "amount": 45.0,
     "date": "2025-04-22"
   },
   {
     "id": 4,
     "userId": 1,
-    "description": "Salon Supplies",
-    "amount": 80.5,
+    "description": "Office Supplies Shopping",
+    "amount": 70.0,
     "date": "2025-04-29"
   },
   {
     "id": 5,
     "userId": 1,
-    "description": "Rent",
+    "description": "Train Tickets",
     "amount": 800.0,
     "date": "2025-05-01"
   },
@@ -51,22 +51,22 @@
   {
     "id": 8,
     "userId": 1,
-    "description": "Utilities",
-    "amount": 150.0,
+    "description": "Microsoft 365 Subscription",
+    "amount": 140.0,
     "date": "2025-04-15"
   },
   {
     "id": 9,
     "userId": 1,
-    "description": "Insurance",
-    "amount": 200.0,
+    "description": "Grocery Shopping",
+    "amount": 190.0,
     "date": "2025-04-01"
   },
   {
     "id": 10,
     "userId": 1,
     "description": "Software Subscription",
-    "amount": 30.0,
+    "amount": 29.99,
     "date": "2025-04-01"
   },
   {
@@ -334,5 +334,40 @@
     "description": "Equipment Maintenance",
     "amount": 250.0,
     "date": "2025-03-05"
+  },
+  {
+    "id": 37,
+    "userId": 1,
+    "description": "Taxi Ride",
+    "amount": 79.99,
+    "date": "2025-04-10"
+  },
+  {
+    "id": 38,
+    "userId": 1,
+    "description": "Spotify Premium",
+    "amount": 69.99,
+    "date": "2025-04-12"
+  },
+  {
+    "id": 39,
+    "userId": 1,
+    "description": "Clothing Store",
+    "amount": 89.99,
+    "date": "2025-04-14"
+  },
+  {
+    "id": 40,
+    "userId": 1,
+    "description": "Bus Pass",
+    "amount": 59.99,
+    "date": "2025-04-16"
+  },
+  {
+    "id": 41,
+    "userId": 1,
+    "description": "Netflix Subscription",
+    "amount": 44.99,
+    "date": "2025-04-18"
   }
 ]

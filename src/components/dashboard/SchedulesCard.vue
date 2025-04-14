@@ -44,7 +44,7 @@ interface Schedule {
   date: string;
 }
 
-const currentDate = new Date('2025-04-13');
+const currentDate = new Date();
 const schedules = ref<Schedule[]>([]);
 
 const todaySchedules = computed(() => {

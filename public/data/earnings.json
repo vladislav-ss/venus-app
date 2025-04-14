@@ -1,5 +1,250 @@
 [
   {
+    "id": 61,
+    "userId": 1,
+    "description": "Beauty Supplies",
+    "amount": -34.99,
+    "date": "2025-03-25"
+  },
+  {
+    "id": 62,
+    "userId": 1,
+    "description": "Equipment Maintenance",
+    "amount": -45.5,
+    "date": "2025-03-26"
+  },
+  {
+    "id": 63,
+    "userId": 1,
+    "description": "Cleaning Supplies",
+    "amount": -24.99,
+    "date": "2025-03-27"
+  },
+  {
+    "id": 64,
+    "userId": 1,
+    "description": "Marketing Materials",
+    "amount": -39.99,
+    "date": "2025-03-28"
+  },
+  {
+    "id": 65,
+    "userId": 1,
+    "description": "Professional Training",
+    "amount": -49.99,
+    "date": "2025-03-29"
+  },
+  {
+    "id": 66,
+    "userId": 1,
+    "description": "Utilities",
+    "amount": -29.99,
+    "date": "2025-03-30"
+  },
+  {
+    "id": 67,
+    "userId": 1,
+    "description": "Hair Products",
+    "amount": -44.5,
+    "date": "2025-03-31"
+  },
+  {
+    "id": 68,
+    "userId": 1,
+    "description": "Makeup Supplies",
+    "amount": -39.99,
+    "date": "2025-04-01"
+  },
+  {
+    "id": 69,
+    "userId": 1,
+    "description": "Equipment Upgrade",
+    "amount": -34.99,
+    "date": "2025-04-02"
+  },
+  {
+    "id": 70,
+    "userId": 1,
+    "description": "Business Insurance",
+    "amount": -29.99,
+    "date": "2025-04-03"
+  },
+  {
+    "id": 71,
+    "userId": 1,
+    "description": "Nail Supplies",
+    "amount": -24.99,
+    "date": "2025-04-04"
+  },
+  {
+    "id": 72,
+    "userId": 1,
+    "description": "Website Hosting",
+    "amount": -19.99,
+    "date": "2025-04-05"
+  },
+  {
+    "id": 73,
+    "userId": 1,
+    "description": "Professional Memberships",
+    "amount": -24.99,
+    "date": "2025-04-06"
+  },
+  {
+    "id": 74,
+    "userId": 1,
+    "description": "Spa Supplies",
+    "amount": -34.99,
+    "date": "2025-04-07"
+  },
+  {
+    "id": 75,
+    "userId": 1,
+    "description": "Business Software",
+    "amount": -39.99,
+    "date": "2025-04-08"
+  },
+  {
+    "id": 56,
+    "userId": 1,
+    "description": "Hair Coloring",
+    "amount": 140.0,
+    "date": "2025-01-08"
+  },
+  {
+    "id": 57,
+    "userId": 1,
+    "description": "Manicure & Pedicure",
+    "amount": 95.0,
+    "date": "2025-02-15"
+  },
+  {
+    "id": 58,
+    "userId": 1,
+    "description": "Facial Treatment",
+    "amount": 120.0,
+    "date": "2025-03-12"
+  },
+  {
+    "id": 59,
+    "userId": 1,
+    "description": "Hair Extensions",
+    "amount": 250.0,
+    "date": "2025-04-02"
+  },
+  {
+    "id": 60,
+    "userId": 1,
+    "description": "Bridal Package",
+    "amount": 450.0,
+    "date": "2025-04-09"
+  },
+  {
+    "id": 41,
+    "userId": 1,
+    "description": "Hair Styling",
+    "amount": 75.0,
+    "date": "2025-01-05"
+  },
+  {
+    "id": 42,
+    "userId": 1,
+    "description": "Makeup Session",
+    "amount": 120.0,
+    "date": "2025-01-12"
+  },
+  {
+    "id": 43,
+    "userId": 1,
+    "description": "Full Service Package",
+    "amount": 185.5,
+    "date": "2025-01-18"
+  },
+  {
+    "id": 44,
+    "userId": 1,
+    "description": "Spa Treatment",
+    "amount": 160.0,
+    "date": "2025-01-25"
+  },
+  {
+    "id": 45,
+    "userId": 1,
+    "description": "Hair Coloring",
+    "amount": 140.0,
+    "date": "2025-02-02"
+  },
+  {
+    "id": 46,
+    "userId": 1,
+    "description": "Manicure & Pedicure",
+    "amount": 95.0,
+    "date": "2025-02-09"
+  },
+  {
+    "id": 47,
+    "userId": 1,
+    "description": "Facial Treatment",
+    "amount": 120.0,
+    "date": "2025-02-16"
+  },
+  {
+    "id": 48,
+    "userId": 1,
+    "description": "Hair Extensions",
+    "amount": 250.0,
+    "date": "2025-02-23"
+  },
+  {
+    "id": 49,
+    "userId": 1,
+    "description": "Bridal Package",
+    "amount": 450.0,
+    "date": "2025-03-01"
+  },
+  {
+    "id": 50,
+    "userId": 1,
+    "description": "Full Body Massage",
+    "amount": 130.0,
+    "date": "2025-03-08"
+  },
+  {
+    "id": 51,
+    "userId": 1,
+    "description": "Hair Treatment",
+    "amount": 95.0,
+    "date": "2025-03-15"
+  },
+  {
+    "id": 52,
+    "userId": 1,
+    "description": "Nail Art",
+    "amount": 75.0,
+    "date": "2025-03-22"
+  },
+  {
+    "id": 53,
+    "userId": 1,
+    "description": "Spa Package",
+    "amount": 220.0,
+    "date": "2025-03-29"
+  },
+  {
+    "id": 54,
+    "userId": 1,
+    "description": "Hair Styling",
+    "amount": 80.0,
+    "date": "2025-04-05"
+  },
+  {
+    "id": 55,
+    "userId": 1,
+    "description": "Makeup Session",
+    "amount": 125.0,
+    "date": "2025-04-12"
+  },
+  {
     "id": 1,
     "userId": 1,
     "description": "Full Service Package",

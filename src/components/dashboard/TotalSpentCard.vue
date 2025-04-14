@@ -22,11 +22,12 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed } from 'vue';
 import { getExpensesCurrentUser } from '../../api/expensesApi';
 import { getMonthlyChartOptions } from '../../config/monthlyChartOptions';
 
-const totalSpent = ref(0);
+const rawTotalSpent = ref(0);
+const totalSpent = computed(() => Number(rawTotalSpent.value).toFixed(2));
 const monthlyAverage = ref(0);
 const chartOptions = ref(getMonthlyChartOptions());
 
@@ -65,7 +66,7 @@ onMounted(async () => {
     ];
 
     // Calculate total spent
-    totalSpent.value = monthlyTotals.reduce((acc, curr) => acc + curr, 0);
+    rawTotalSpent.value = monthlyTotals.reduce((acc, curr) => acc + curr, 0);
   } catch (error) {
     console.error('Error fetching expenses:', error);
   }
